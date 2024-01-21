@@ -227,6 +227,8 @@ loop1:
 
 	SEI							; Initialisation complete. Enable IRQ's
 		
+;
+
 ;---------------------------------------------------------------------------------------------------------------------------
 ; Main Loop 
 
@@ -364,6 +366,7 @@ TIM1_COMPA:						; IRQ service for OCR1A
 
 ;---------------------------------------------------------------------------------------------------------------------------
 ; include subroutines and fonts
+.db WELCOME "ATMEL COMPOSITE VIDEO CONTROLLER"
 
 .include "ProcChr.inc"
 

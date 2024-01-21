@@ -26,7 +26,8 @@ Woz:      .byte $88, $a8, $50, $07, $61, $92, $94, $67
           nop
           
           .segment "E000"
-          .include "a1basic.asm"
+          ;.include "a1basic.asm"
+          ;.include "stringwork.asm"
 
           .segment "F000"
           nop
@@ -47,12 +48,13 @@ Woz:      .byte $88, $a8, $50, $07, $61, $92, $94, $67
            nop
           ;;printing 8x8 picture in the center with '*'
          ; .include "8x8art.asm"
+          .include "stringwork.asm"
 
           .segment "FD00"
           ;.include "POST.asm"
           nop
           ;Printing 'Hello, World!' 
-          ;.include "HelloWorld.asm"
+          .include "HelloWorld.asm"
 
           .segment "FF00"
           .include "Woz_Monitor.asm"

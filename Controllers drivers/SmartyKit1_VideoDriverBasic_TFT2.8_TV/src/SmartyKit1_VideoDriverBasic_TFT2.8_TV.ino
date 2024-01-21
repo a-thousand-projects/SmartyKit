@@ -123,7 +123,7 @@ void printCharToDisplay(void) {
       scan_code -= 0x20;
 
      //print only visible chars, starting from blanc 
-     if (scan_code >= 0x20)
+   //  if (scan_code >= 0x20)
      { 
       TV_terminal.send(scan_code);
         /* if (scan_code == 0x5C)      // prompt 
